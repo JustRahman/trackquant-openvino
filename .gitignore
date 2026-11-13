@@ -1,0 +1,5 @@
+__pycache__/
+.venv/
+data/
+*.pt
+*_openvino_model/

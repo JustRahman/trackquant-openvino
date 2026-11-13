@@ -1,0 +1,10 @@
+ultralytics==8.4.211
+openvino==2026.4.1
+nncf==3.4.0
+lap>=0.5.12
+numpy
+scipy
+psutil
+pandas
+matplotlib
+opencv-python

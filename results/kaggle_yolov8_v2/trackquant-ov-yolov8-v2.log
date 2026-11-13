@@ -1,0 +1,153 @@
+[{"stream_name":"stdout","time":0.931438303,"data":"[guard] cpu vendor: GenuineIntel\n"}
+,{"stream_name":"stdout","time":18.74187641,"data":"[     18s] cpu: Intel(R) Xeon(R) CPU @ 2.20GHz x4, 31.3 GB, isa: ['avx2']\n"}
+,{"stream_name":"stdout","time":25.149690135,"data":"[     24s] MOT17.zip is 5.46 GB; downloading 0.52 GB in 5 ranges\n"}
+,{"stream_name":"stdout","time":43.530580959,"data":"[     43s] MOT17 from motchallenge.net (official): 0.52 GB in 23 s\n"}
+,{"stream_name":"stdout","time":44.52155486,"data":"[     44s] MOT17-02: 600 frames, 30.0 fps, 1920x1080\n"}
+,{"stream_name":"stdout","time":44.521614533,"data":"[     44s] MOT17-04: 1050 frames, 30.0 fps, 1920x1080\n"}
+,{"stream_name":"stdout","time":44.521622165,"data":"[     44s] MOT17-11: 900 frames, 30.0 fps, 1920x1080\n"}
+,{"stream_name":"stdout","time":50.030703144,"data":"Creating new Ultralytics Settings v0.0.8 file ✅ \n"}
+,{"stream_name":"stdout","time":50.030779583,"data":"View Ultralytics Settings with 'yolo settings' or at '/root/.config/Ultralytics/settings.json'\n"}
+,{"stream_name":"stdout","time":50.030788798,"data":"Update Settings with 'yolo settings key=value', i.e. 'yolo settings runs_dir=path/to/dir'. For help see https://docs.ultralytics.com/usage/settings\n"}
+,{"stream_name":"stdout","time":51.481436712,"data":"\r\u001b[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov8n.pt to 'yolov8n.pt': 17% ━━────────── 1.1/6.2MB 10.8MB/s 0.1s\u003c0.5s\r\u001b[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov8n.pt to 'yolov8n.pt': 32% ━━━╸──────── 2.0/6.2MB 9.2MB/s 0.2s\u003c0.5s\r\u001b[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov8n.pt to 'yolov8n.pt': 46% ━━━━━╸────── 2.9/6.2MB 9.1MB/s 0.3s\u003c0.4s\r\u001b[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov8n.pt to 'yolov8n.pt': 63% ━━━━━━━╸──── 4.0/6.2MB 10.6MB/s 0.4s\u003c0.2s\r\u001b[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov8n.pt to 'yolov8n.pt': 82% ━━━━━━━━━╸── 5.2/6.2MB 11.7MB/s 0.5s\u003c0.1s\r\u001b[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov8n.pt to 'yolov8n.pt': 100% ━━━━━━━━━━━━ 6.2MB 10.6MB/s 0.6s\n"}
+,{"stream_name":"stdout","time":51.674395474,"data":"Ultralytics 8.4.211 🚀 Python-3.13.18 torch-2.11.0+cpu CPU (Intel Xeon CPU @ 2.20GHz)\n"}
+,{"stream_name":"stdout","time":51.805290253,"data":"💡 ProTip: Export to OpenVINO format for best performance on Intel hardware. Learn more at https://docs.ultralytics.com/integrations/openvino\n"}
+,{"stream_name":"stdout","time":52.043247723,"data":"YOLOv8n summary (fused): 72 layers, 3,151,904 parameters, 0 gradients, 5.2 GFLOPs\n"}
+,{"stream_name":"stdout","time":52.324230768,"data":"\n"}
+,{"stream_name":"stdout","time":52.32427899,"data":"\u001b[34m\u001b[1mPyTorch:\u001b[0m starting from '/kaggle/tmp/p2/models/ov_fp32/yolov8n.pt' with input shape (1, 3, 384, 640) BCHW and output shape(s) (1, 84, 5040) (6.2 MB)\n"}
+,{"stream_name":"stdout","time":52.676466916,"data":"\n"}
+,{"stream_name":"stdout","time":52.676571022,"data":"\u001b[34m\u001b[1mOpenVINO:\u001b[0m starting export with openvino 2026.4.1-22982-e213a147257-releases/2026/4...\n"}
+,{"stream_name":"stdout","time":55.012331977,"data":"\u001b[34m\u001b[1mOpenVINO:\u001b[0m export success ✅ 2.7s, saved as '/kaggle/tmp/p2/models/ov_fp32/yolov8n_openvino_model/' (12.3 MB)\n"}
+,{"stream_name":"stdout","time":55.012410169,"data":"\n"}
+,{"stream_name":"stdout","time":55.012415453,"data":"Export complete (3.3s)\n"}
+,{"stream_name":"stdout","time":55.012420207,"data":"Results saved to \u001b[1m/kaggle/tmp/p2/models/ov_fp32/yolov8n_openvino_model\u001b[0m\n"}
+,{"stream_name":"stdout","time":55.01246276,"data":"Predict:         yolo predict task=detect model=/kaggle/tmp/p2/models/ov_fp32/yolov8n_openvino_model/ imgsz=384,640 \n"}
+,{"stream_name":"stdout","time":55.01246686,"data":"Validate:        yolo val task=detect model=/kaggle/tmp/p2/models/ov_fp32/yolov8n_openvino_model/ imgsz=384,640 data=coco.yaml \n"}
+,{"stream_name":"stdout","time":55.012471047,"data":"Visualize:       https://netron.app\n"}
+,{"stream_name":"stdout","time":55.024892486,"data":"[     54s] export ov_fp32: 3.4 s -\u003e /kaggle/tmp/p2/models/ov_fp32/yolov8n_openvino_model/ (12.3 MB) kwargs={'format': 'openvino', 'imgsz': [384, 640], 'batch': 1, 'device': 'cpu'}\n"}
+,{"stream_name":"stdout","time":55.469329216,"data":"Ultralytics 8.4.211 🚀 Python-3.13.18 torch-2.11.0+cpu CPU (Intel Xeon CPU @ 2.20GHz)\n"}
+,{"stream_name":"stdout","time":55.571432338,"data":"YOLOv8n summary (fused): 72 layers, 3,151,904 parameters, 0 gradients, 5.2 GFLOPs\n"}
+,{"stream_name":"stdout","time":55.69700839,"data":"\n"}
+,{"stream_name":"stdout","time":55.69705982,"data":"\u001b[34m\u001b[1mPyTorch:\u001b[0m starting from '/kaggle/tmp/p2/models/ov_fp16/yolov8n.pt' with input shape (1, 3, 384, 640) BCHW and output shape(s) (1, 84, 5040) (6.2 MB)\n"}
+,{"stream_name":"stdout","time":55.699326485,"data":"\n"}
+,{"stream_name":"stdout","time":55.69951534,"data":"\u001b[34m\u001b[1mOpenVINO:\u001b[0m starting export with openvino 2026.4.1-22982-e213a147257-releases/2026/4...\n"}
+,{"stream_name":"stdout","time":57.902112045,"data":"\u001b[34m\u001b[1mOpenVINO:\u001b[0m export success ✅ 2.2s, saved as '/kaggle/tmp/p2/models/ov_fp16/yolov8n_openvino_model/' (6.3 MB)\n"}
+,{"stream_name":"stdout","time":57.902511074,"data":"\n"}
+,{"stream_name":"stdout","time":57.90253081,"data":"Export complete (2.4s)\n"}
+,{"stream_name":"stdout","time":57.902536651,"data":"Results saved to \u001b[1m/kaggle/tmp/p2/models/ov_fp16/yolov8n_openvino_model\u001b[0m\n"}
+,{"stream_name":"stdout","time":57.902542488,"data":"Predict:         yolo predict task=detect model=/kaggle/tmp/p2/models/ov_fp16/yolov8n_openvino_model/ imgsz=384,640 quantize=16\n"}
+,{"stream_name":"stdout","time":57.902547518,"data":"Validate:        yolo val task=detect model=/kaggle/tmp/p2/models/ov_fp16/yolov8n_openvino_model/ imgsz=384,640 data=coco.yaml quantize=16\n"}
+,{"stream_name":"stdout","time":57.902553188,"data":"Visualize:       https://netron.app\n"}
+,{"stream_name":"stdout","time":57.913403346,"data":"[     57s] export ov_fp16: 2.5 s -\u003e /kaggle/tmp/p2/models/ov_fp16/yolov8n_openvino_model/ (6.33 MB) kwargs={'format': 'openvino', 'imgsz': [384, 640], 'batch': 1, 'device': 'cpu', 'quantize': 16}\n"}
+,{"stream_name":"stdout","time":58.311271138,"data":"Ultralytics 8.4.211 🚀 Python-3.13.18 torch-2.11.0+cpu CPU (Intel Xeon CPU @ 2.20GHz)\n"}
+,{"stream_name":"stdout","time":58.40661362,"data":"YOLOv8n summary (fused): 72 layers, 3,151,904 parameters, 0 gradients, 5.2 GFLOPs\n"}
+,{"stream_name":"stdout","time":58.530814999,"data":"\n"}
+,{"stream_name":"stdout","time":58.530868901,"data":"\u001b[34m\u001b[1mPyTorch:\u001b[0m starting from '/kaggle/tmp/p2/models/ov_int8/yolov8n.pt' with input shape (1, 3, 384, 640) BCHW and output shape(s) (1, 84, 5040) (6.2 MB)\n"}
+,{"stream_name":"stdout","time":59.699272114,"data":"\u001b[34m\u001b[1mOpenVINO:\u001b[0m collecting INT8 calibration images from 'data=/kaggle/tmp/p2/calib/calib.yaml'\n"}
+,{"stream_name":"stdout","time":60.432644698,"data":"\r\u001b[KDownloading https://ultralytics.com/assets/Arial.ttf to '/root/.config/Ultralytics/Arial.ttf': 100% ━━━━━━━━━━━━ 755.1KB 15.8MB/s 0.0s\n"}
+,{"stream_name":"stdout","time":60.442134048,"data":"\u001b[34m\u001b[1mval: \u001b[0mFast image access ✅ (ping: 0.0±0.0 ms, read: 1720.7±602.3 MB/s, size: 129.7 KB)\n"}
+,{"stream_name":"stdout","time":60.813966787,"data":"\r\u001b[K\u001b[34m\u001b[1mval: \u001b[0mScanning /kaggle/tmp/p2/calib/labels/val... 70 images, 0 backgrounds, 0 corrupt: 23% ━━╸───────── 70/300 208.4it/s 0.1s\u003c1.1s\r\u001b[K\u001b[34m\u001b[1mval: \u001b[0mScanning /kaggle/tmp/p2/calib/labels/val... 165 images, 0 backgrounds, 0 corrupt: 55% ━━━━━━╸───── 165/300 418.8it/s 0.2s\u003c0.3s\r\u001b[K\u001b[34m\u001b[1mval: \u001b[0mScanning /kaggle/tmp/p2/calib/labels/val... 257 images, 0 backgrounds, 0 corrupt: 85% ━━━━━━━━━━── 257/300 565.8it/s 0.3s\u003c0.1s\r\u001b[K\u001b[34m\u001b[1mval: \u001b[0mScanning /kaggle/tmp/p2/calib/labels/val... 300 images, 0 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 300/300 843.4it/s 0.4s\n"}
+,{"stream_name":"stdout","time":60.825072339,"data":"\u001b[34m\u001b[1mval: \u001b[0mNew cache created: /kaggle/tmp/p2/calib/labels/val.cache\n"}
+,{"stream_name":"stdout","time":60.830703573,"data":"\n"}
+,{"stream_name":"stdout","time":60.830754917,"data":"\u001b[34m\u001b[1mOpenVINO:\u001b[0m starting export with openvino 2026.4.1-22982-e213a147257-releases/2026/4...\n"}
+,{"stream_name":"stdout","time":65.387835874,"data":"INFO:nncf:34 ignored nodes were found by names in the NNCFGraph\n"}
+,{"stream_name":"stdout","time":66.161742176,"data":"INFO:nncf:Not adding activation input quantizer for operation: 138 __module.model.22/aten::view/Reshape\n"}
+,{"stream_name":"stdout","time":66.161800573,"data":"INFO:nncf:Not adding activation input quantizer for operation: 139 __module.model.22/aten::view/Reshape_3\n"}
+,{"stream_name":"stdout","time":66.162736023,"data":"INFO:nncf:Not adding activation input quantizer for operation: 224 __module.model.22/aten::view/Reshape_1\n"}
+,{"stream_name":"stdout","time":66.162764961,"data":"INFO:nncf:Not adding activation input quantizer for operation: 225 __module.model.22/aten::view/Reshape_4\n"}
+,{"stream_name":"stdout","time":66.164058364,"data":"INFO:nncf:Not adding activation input quantizer for operation: 251 __module.model.22/aten::view/Reshape_2\n"}
+,{"stream_name":"stdout","time":66.164093663,"data":"INFO:nncf:Not adding activation input quantizer for operation: 252 __module.model.22/aten::view/Reshape_5\n"}
+,{"stream_name":"stdout","time":66.16424645,"data":"INFO:nncf:Not adding activation input quantizer for operation: 147 __module.model.22/aten::cat/Concat\n"}
+,{"stream_name":"stdout","time":66.16437412,"data":"INFO:nncf:Not adding activation input quantizer for operation: 159 __module.model.22.dfl/aten::view/Reshape\n"}
+,{"stream_name":"stdout","time":66.164475216,"data":"INFO:nncf:Not adding activation input quantizer for operation: 170 __module.model.22.dfl/aten::transpose/Transpose\n"}
+,{"stream_name":"stdout","time":66.164554288,"data":"INFO:nncf:Not adding activation input quantizer for operation: 181 __module.model.22.dfl/aten::softmax/Softmax\n"}
+,{"stream_name":"stdout","time":66.164714689,"data":"INFO:nncf:Not adding activation input quantizer for operation: 190 __module.model.22.dfl.conv/aten::_convolution/Convolution\n"}
+,{"stream_name":"stdout","time":66.164807294,"data":"INFO:nncf:Not adding activation input quantizer for operation: 196 __module.model.22.dfl/aten::view/Reshape_1\n"}
+,{"stream_name":"stdout","time":66.164935057,"data":"INFO:nncf:Not adding activation input quantizer for operation: 135 __module.model.22/prim::ListUnpack/VariadicSplit\n"}
+,{"stream_name":"stdout","time":66.165025292,"data":"INFO:nncf:Not adding activation input quantizer for operation: 143 __module.model.22/aten::sub/Subtract\n"}
+,{"stream_name":"stdout","time":66.165142777,"data":"INFO:nncf:Not adding activation input quantizer for operation: 144 __module.model.22/aten::add/Add\n"}
+,{"stream_name":"stdout","time":66.165284871,"data":"INFO:nncf:Not adding activation input quantizer for operation: 154 __module.model.22/aten::add/Add_1\n"}
+,{"stream_name":"stdout","time":66.165301385,"data":"165 __module.model.22/aten::div/Divide\n"}
+,{"stream_name":"stdout","time":66.165305945,"data":"\n"}
+,{"stream_name":"stdout","time":66.165400582,"data":"INFO:nncf:Not adding activation input quantizer for operation: 155 __module.model.22/aten::sub/Subtract_1\n"}
+,{"stream_name":"stdout","time":66.165499179,"data":"INFO:nncf:Not adding activation input quantizer for operation: 166 __module.model.22/aten::cat/Concat_1\n"}
+,{"stream_name":"stdout","time":66.165618688,"data":"INFO:nncf:Not adding activation input quantizer for operation: 176 __module.model.22/aten::mul/Multiply\n"}
+,{"stream_name":"stdout","time":66.165710635,"data":"INFO:nncf:Not adding activation input quantizer for operation: 148 __module.model.22/aten::cat/Concat_2\n"}
+,{"stream_name":"stdout","time":66.165819999,"data":"INFO:nncf:Not adding activation input quantizer for operation: 160 __module.model.22/aten::sigmoid/Sigmoid\n"}
+,{"stream_name":"stdout","time":66.165940347,"data":"INFO:nncf:Not adding activation input quantizer for operation: 171 __module.model.22/aten::cat/Concat_3\n"}
+,{"stream_name":"stdout","time":112.976591757,"data":"Statistics collection ━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 300/300 • 0:00:44 • 0:00:00\n"}
+,{"stream_name":"stdout","time":116.728418374,"data":"Applying Fast Bias correction ━━━━━━━━━━━━━━━━━━━ 100% 63/63 • 0:00:03 • 0:00:00\n"}
+,{"stream_name":"stdout","time":117.053917367,"data":"\u001b[34m\u001b[1mOpenVINO:\u001b[0m export success ✅ 58.5s, saved as '/kaggle/tmp/p2/models/ov_int8/yolov8n_int8_openvino_model/' (3.5 MB)\n"}
+,{"stream_name":"stdout","time":117.054177673,"data":"\n"}
+,{"stream_name":"stdout","time":117.054211944,"data":"Export complete (58.7s)\n"}
+,{"stream_name":"stdout","time":117.054219996,"data":"Results saved to \u001b[1m/kaggle/tmp/p2/models/ov_int8/yolov8n_int8_openvino_model\u001b[0m\n"}
+,{"stream_name":"stdout","time":117.054227037,"data":"Predict:         yolo predict task=detect model=/kaggle/tmp/p2/models/ov_int8/yolov8n_int8_openvino_model/ imgsz=384,640 \n"}
+,{"stream_name":"stdout","time":117.054233957,"data":"Validate:        yolo val task=detect model=/kaggle/tmp/p2/models/ov_int8/yolov8n_int8_openvino_model/ imgsz=384,640 data=coco.yaml \n"}
+,{"stream_name":"stdout","time":117.05424031,"data":"Visualize:       https://netron.app\n"}
+,{"stream_name":"stdout","time":117.063644858,"data":"[    116s] export ov_int8: 58.8 s -\u003e /kaggle/tmp/p2/models/ov_int8/yolov8n_int8_openvino_model/ (3.54 MB) kwargs={'format': 'openvino', 'imgsz': [384, 640], 'batch': 1, 'device': 'cpu', 'quantize': 8, 'data': '/kaggle/tmp/p2/calib/calib.yaml', 'fraction': 1.0}\n"}
+,{"stream_name":"stdout","time":426.551240652,"data":"[    426s] pt_fp32 conf=0.01 N=1: HOTA 40.25 MOTA 34.102 IDF1 47.444 IDSW/min 91.76 fps 9.89 (309 s)\n"}
+,{"stream_name":"stdout","time":426.703171229,"data":"\n"}
+,{"stream_name":"stdout","time":426.703234684,"data":"CLEAR Config:\n"}
+,{"stream_name":"stdout","time":426.70324351,"data":"THRESHOLD            : 0.5                           \n"}
+,{"stream_name":"stdout","time":426.703249293,"data":"PRINT_CONFIG         : True                          \n"}
+,{"stream_name":"stdout","time":426.703261181,"data":"\n"}
+,{"stream_name":"stdout","time":426.703265278,"data":"Identity Config:\n"}
+,{"stream_name":"stdout","time":426.703268693,"data":"THRESHOLD            : 0.5                           \n"}
+,{"stream_name":"stdout","time":426.703292236,"data":"PRINT_CONFIG         : True                          \n"}
+,{"stream_name":"stdout","time":426.703295862,"data":"\n"}
+,{"stream_name":"stdout","time":426.703299765,"data":"Evaluating 1 tracker(s) on 3 sequence(s) for 1 class(es) on MotChallenge2DBox dataset using the following metrics: HOTA, CLEAR, Identity, Count\n"}
+,{"stream_name":"stdout","time":426.703304442,"data":"\n"}
+,{"stream_name":"stdout","time":426.703308198,"data":"\n"}
+,{"stream_name":"stdout","time":426.703311733,"data":"Evaluating p2\n"}
+,{"stream_name":"stdout","time":426.703316717,"data":"\n"}
+,{"stream_name":"stdout","time":430.696165644,"data":"[    430s] trackeval cross-check: {'run': 'pt_fp32 conf=0.01 N=1', 'this_script': {'HOTA': 40.25, 'DetA': 33.656, 'AssA': 48.545, 'MOTA': 34.102, 'IDF1': np.float64(47.444), 'IDSW': 130, 'Frag': 284}, 'trackeval': {'HOTA': 40.25, 'DetA': 33.656, 'AssA': 48.545, 'MOTA': 34.104, 'IDF1': 47.444, 'IDSW': 130, 'Frag': 286}}\n"}
+,{"stream_name":"stdout","time":720.814173358,"data":"[    720s] pt_fp32 conf=0.03 N=1: HOTA 40.298 MOTA 34.718 IDF1 47.403 IDSW/min 82.59 fps 10.04 (289 s)\n"}
+,{"stream_name":"stdout","time":1008.088640492,"data":"[   1007s] pt_fp32 conf=0.05 N=1: HOTA 39.652 MOTA 34.512 IDF1 46.536 IDSW/min 88.24 fps 10.1 (286 s)\n"}
+,{"stream_name":"stdout","time":1293.147822117,"data":"[   1292s] pt_fp32 conf=0.1 N=1: HOTA 39.171 MOTA 34.083 IDF1 45.531 IDSW/min 95.29 fps 10.18 (284 s)\n"}
+,{"stream_name":"stdout","time":1578.991862319,"data":"[   1578s] pt_fp32 conf=0.2 N=1: HOTA 38.931 MOTA 33.42 IDF1 45.003 IDSW/min 93.18 fps 10.17 (284 s)\n"}
+,{"stream_name":"stdout","time":1580.333947412,"data":"Loading /kaggle/tmp/p2/models/ov_fp32/yolov8n_openvino_model/ for OpenVINO inference...\n"}
+,{"stream_name":"stdout","time":1580.614183043,"data":"Using OpenVINO LATENCY mode for batch=1 inference on CPU...\n"}
+,{"stream_name":"stdout","time":1803.613392069,"data":"[   1803s] ov_fp32 conf=0.01 N=1: HOTA 40.25 MOTA 34.102 IDF1 47.444 IDSW/min 91.76 fps 13.39 (224 s)\n"}
+,{"stream_name":"stdout","time":2021.896494903,"data":"[   2021s] ov_fp32 conf=0.03 N=1: HOTA 40.298 MOTA 34.718 IDF1 47.403 IDSW/min 82.59 fps 13.73 (217 s)\n"}
+,{"stream_name":"stdout","time":2240.306142916,"data":"[   2239s] ov_fp32 conf=0.05 N=1: HOTA 39.652 MOTA 34.512 IDF1 46.536 IDSW/min 88.24 fps 13.74 (218 s)\n"}
+,{"stream_name":"stdout","time":2458.128993408,"data":"[   2457s] ov_fp32 conf=0.1 N=1: HOTA 39.171 MOTA 34.083 IDF1 45.531 IDSW/min 95.29 fps 13.82 (217 s)\n"}
+,{"stream_name":"stdout","time":2675.114121352,"data":"[   2674s] ov_fp32 conf=0.2 N=1: HOTA 38.931 MOTA 33.42 IDF1 45.003 IDSW/min 93.18 fps 13.87 (216 s)\n"}
+,{"stream_name":"stdout","time":2676.527378119,"data":"Loading /kaggle/tmp/p2/models/ov_int8/yolov8n_int8_openvino_model/ for OpenVINO inference...\n"}
+,{"stream_name":"stdout","time":2677.217514765,"data":"Using OpenVINO LATENCY mode for batch=1 inference on CPU...\n"}
+,{"stream_name":"stdout","time":2843.266955082,"data":"[   2842s] ov_int8 conf=0.01 N=1: HOTA 39.706 MOTA 35.297 IDF1 46.857 IDSW/min 102.35 fps 19.23 (167 s)\n"}
+,{"stream_name":"stdout","time":3005.37348547,"data":"[   3004s] ov_int8 conf=0.03 N=1: HOTA 39.603 MOTA 35.504 IDF1 46.686 IDSW/min 103.76 fps 19.83 (161 s)\n"}
+,{"stream_name":"stdout","time":3166.688056057,"data":"[   3166s] ov_int8 conf=0.05 N=1: HOTA 39.149 MOTA 35.236 IDF1 45.92 IDSW/min 103.76 fps 19.86 (160 s)\n"}
+,{"stream_name":"stdout","time":3318.048942717,"data":"[   3317s] ov_int8 conf=0.1 N=1: HOTA 38.962 MOTA 34.745 IDF1 45.418 IDSW/min 101.65 fps 20.93 (150 s)\n"}
+,{"stream_name":"stdout","time":3468.413950241,"data":"[   3467s] ov_int8 conf=0.2 N=1: HOTA 38.83 MOTA 34.032 IDF1 45.365 IDSW/min 103.76 fps 21.09 (149 s)\n"}
+,{"stream_name":"stdout","time":3469.748271303,"data":"Loading /kaggle/tmp/p2/models/ov_fp16/yolov8n_openvino_model/ for OpenVINO inference...\n"}
+,{"stream_name":"stdout","time":3470.030964382,"data":"Using OpenVINO LATENCY mode for batch=1 inference on CPU...\n"}
+,{"stream_name":"stdout","time":3688.69880536,"data":"[   3688s] ov_fp16 conf=0.01 N=1: HOTA 40.477 MOTA 34.071 IDF1 47.636 IDSW/min 92.47 fps 13.66 (219 s)\n"}
+,{"stream_name":"stdout","time":3910.163803166,"data":"[   3909s] ov_fp16 conf=0.03 N=1: HOTA 40.301 MOTA 34.709 IDF1 47.404 IDSW/min 86.12 fps 13.58 (220 s)\n"}
+,{"stream_name":"stdout","time":4129.620096796,"data":"[   4129s] ov_fp16 conf=0.05 N=1: HOTA 39.656 MOTA 34.507 IDF1 46.532 IDSW/min 90.35 fps 13.7 (218 s)\n"}
+,{"stream_name":"stdout","time":4347.62581253,"data":"[   4347s] ov_fp16 conf=0.1 N=1: HOTA 39.248 MOTA 34.086 IDF1 45.562 IDSW/min 96.71 fps 13.8 (217 s)\n"}
+,{"stream_name":"stdout","time":4565.954325429,"data":"[   4565s] ov_fp16 conf=0.2 N=1: HOTA 38.927 MOTA 33.407 IDF1 44.98 IDSW/min 95.29 fps 14.09 (217 s)\n"}
+,{"stream_name":"stdout","time":4717.833354843,"data":"[   4717s] pt_fp32 conf=0.03 N=2: HOTA 39.536 MOTA 33.879 IDF1 46.871 IDSW/min 75.53 fps 21.27 (151 s)\n"}
+,{"stream_name":"stdout","time":4838.418975037,"data":"[   4837s] pt_fp32 conf=0.03 N=3: HOTA 40.228 MOTA 33.988 IDF1 48.252 IDSW/min 67.06 fps 28.93 (120 s)\n"}
+,{"stream_name":"stdout","time":4921.827369913,"data":"[   4921s] pt_fp32 conf=0.03 N=5: HOTA 38.547 MOTA 32.777 IDF1 46.088 IDSW/min 66.35 fps 50.08 (82 s)\n"}
+,{"stream_name":"stdout","time":4923.336922444,"data":"Loading /kaggle/tmp/p2/models/ov_fp32/yolov8n_openvino_model/ for OpenVINO inference...\n"}
+,{"stream_name":"stdout","time":4923.594143539,"data":"Using OpenVINO LATENCY mode for batch=1 inference on CPU...\n"}
+,{"stream_name":"stdout","time":5046.6088603,"data":"[   5046s] ov_fp32 conf=0.03 N=2: HOTA 39.536 MOTA 33.879 IDF1 46.871 IDSW/min 75.53 fps 27.7 (124 s)\n"}
+,{"stream_name":"stdout","time":5135.068404519,"data":"[   5134s] ov_fp32 conf=0.03 N=3: HOTA 40.228 MOTA 33.988 IDF1 48.252 IDSW/min 67.06 fps 42.73 (87 s)\n"}
+,{"stream_name":"stdout","time":5202.720142837,"data":"[   5202s] ov_fp32 conf=0.03 N=5: HOTA 38.547 MOTA 32.777 IDF1 46.088 IDSW/min 66.35 fps 67.26 (67 s)\n"}
+,{"stream_name":"stdout","time":5204.334335587,"data":"Loading /kaggle/tmp/p2/models/ov_int8/yolov8n_int8_openvino_model/ for OpenVINO inference...\n"}
+,{"stream_name":"stdout","time":5205.009580728,"data":"Using OpenVINO LATENCY mode for batch=1 inference on CPU...\n"}
+,{"stream_name":"stdout","time":5304.81438521,"data":"[   5304s] ov_int8 conf=0.01 N=2: HOTA 39.276 MOTA 34.832 IDF1 46.1 IDSW/min 89.65 fps 37.86 (101 s)\n"}
+,{"stream_name":"stdout","time":5382.475479348,"data":"[   5381s] ov_int8 conf=0.01 N=3: HOTA 38.547 MOTA 33.878 IDF1 45.217 IDSW/min 74.12 fps 56.08 (77 s)\n"}
+,{"stream_name":"stdout","time":5442.263224412,"data":"[   5441s] ov_int8 conf=0.01 N=5: HOTA 37.292 MOTA 32.098 IDF1 43.816 IDSW/min 83.29 fps 91.24 (59 s)\n"}
+,{"stream_name":"stdout","time":5443.829262085,"data":"Loading /kaggle/tmp/p2/models/ov_fp16/yolov8n_openvino_model/ for OpenVINO inference...\n"}
+,{"stream_name":"stdout","time":5444.138832176,"data":"Using OpenVINO LATENCY mode for batch=1 inference on CPU...\n"}
+,{"stream_name":"stdout","time":5573.042211986,"data":"[   5572s] ov_fp16 conf=0.01 N=2: HOTA 39.501 MOTA 33.353 IDF1 46.595 IDSW/min 80.47 fps 26.47 (130 s)\n"}
+,{"stream_name":"stdout","time":5669.201981343,"data":"[   5668s] ov_fp16 conf=0.01 N=3: HOTA 39.945 MOTA 33.639 IDF1 47.486 IDSW/min 67.76 fps 39.74 (95 s)\n"}
+,{"stream_name":"stdout","time":5739.625647698,"data":"[   5739s] ov_fp16 conf=0.01 N=5: HOTA 38.217 MOTA 32.342 IDF1 45.263 IDSW/min 68.47 fps 64.5 (69 s)\n"}
+,{"stream_name":"stdout","time":5741.665566394,"data":"[   5741s] done: 32 grid points, status complete, outputs in /kaggle/working\n"}
+,{"stream_name":"stderr","time":5746.478440885,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":5746.478476895,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":5746.882767321,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":5746.882795955,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":5748.014993415,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":5749.73029955,"data":"[NbConvertApp] Writing 576780 bytes to __results__.html\n"}
+]
